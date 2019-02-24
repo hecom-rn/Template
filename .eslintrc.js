@@ -1,1 +1,8 @@
-module.exports = require('eslint-config-automatic/module/typescript');
+module.exports = {
+    plugins: [
+        "automatic",
+    ],
+    extends: [
+        "plugin:automatic/typescript",
+    ],
+};

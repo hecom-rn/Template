@@ -17,6 +17,6 @@
     "access": "public"
   },
   "devDependencies": {
-    "eslint-config-automatic": "latest"
+    "eslint-plugin-automatic": "latest"
   }
 }
