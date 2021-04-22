@@ -1,8 +1,8 @@
 
-这是一个TS工程配置模板，附带使用travis-ci自动发布新版本功能。
+Travis CI自动发布新版本功能配置模板。
 
 #### .travis.yml介绍：
-在通过git hook触发后，travis-ci.com通过.travis.yml文件声明的内容来执行自动化工作。自动发布工作主要通过stage:deploy来完成。
+在通过git hook触发后，Travis CI通过.travis.yml文件声明的内容来执行自动化工作。自动发布工作主要通过stage:deploy来完成。
 ```yaml
 language: node_js
 node_js:
