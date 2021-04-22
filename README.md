@@ -68,5 +68,7 @@ jobs:
 P.S. [travis-ci.com文档](https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci-using-github)
 
 #### 关于构建结果状态的徽标
-测试
-![示例#70%](/res/example.png)
+在Travis CI的存储库详情页，点击徽标，打开如下图的对话框
+![示例](res/example.png)
+选择要展示的分支，和格式化的方式，例如要在Markdown文档中展示，就将FORMAT选择为`Markdown`。
+复制RESULT中展示的内容，并粘贴在需要使用的文档中即可
