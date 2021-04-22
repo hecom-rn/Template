@@ -1,22 +1,32 @@
 {
-  "name": "@hecom/",
+  "name": "@hecom/template",
   "version": "0.0.1",
   "private": false,
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "test": "./node_modules/.bin/eslint . --ext .ts,.tsx"
+    "build": "rm -rf dist; tsc",
+    "test": "jest",
+    "lint": "./node_modules/.bin/eslint . --ext .ts,.tsx",
+    "patch": "npm version patch -m 'Bump version %s';git push origin master --tags",
+    "minor": "npm version minor -m 'Bump version %s';git push origin master --tags",
+    "major": "npm version major -m 'Bump version %s';git push origin master --tags"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/hecom-rn/.git"
   },
-  "author": "Xiaosong Gao",
+  "author": "Yudong Bai",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
-    "eslint-plugin-automatic": "latest"
+    "@types/jest": "^24.0.15",
+    "eslint-plugin-automatic": "latest",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.2"
   }
 }
