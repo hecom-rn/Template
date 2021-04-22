@@ -44,9 +44,11 @@ jobs:
 - name: 发布到npm的项目名称
 - version: 发布版本，x.y.z格式
 - scripts: 特殊命令
-    - patch: 更新修订号，添加tag，并推送master分支和tag到远端，触发travis
-    - minor: 更新次版本号，添加tag，并推送master分支和tag到远端，触发travis
-    - major: 更新主版本号，添加tag，并推送master分支和tag到远端，触发travis
+    - patch: 自动更新修订号，添加tag，并推送master分支和tag到远端，触发travis
+    - minor: 自动更新次版本号，添加tag，并推送master分支和tag到远端，触发travis
+    - major: 自动更新主版本号，添加tag，并推送master分支和tag到远端，触发travis
+
+发布新版本时，使用`yarn patch`、`yarn minor`、`yarn major`命令发布对应的版本即可
 
 建议版本号的使用遵循 [语义化版本](https://semver.org/lang/zh-CN/) 规范
 
